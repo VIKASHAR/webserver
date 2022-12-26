@@ -27,6 +27,7 @@ Serving the HTML pages.
 Testing the webserver
 
 ## PROGRAM:
+'''
 from http.server import HTTPServer, BaseHTTPRequestHandler
 content="""
 <html>
@@ -49,10 +50,13 @@ server_address = ('',8000)
 httpd = HTTPServer(server_address,myhandler)
 print("my webserver is running....")
 httpd.serve_forever()
+'''
 
 ## OUTPUT:
-![client side output](./images/client%20side%20output.png)
-![server side output](./images/serverside%20output.png)
+### Server side output
+![Server side output](./images/serversideoutput.png)
+### Client side output
+![Server side output](./images/clientsideoutput.png)
 
 ## RESULT:
 The program is executed succesfully
